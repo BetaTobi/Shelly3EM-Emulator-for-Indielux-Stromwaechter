@@ -10,6 +10,7 @@ Currently, the Shelly3EM emulator is available for
 + Arduino IDE
 
 
+
 ## What you need…
 
 ### In any case:
@@ -27,6 +28,14 @@ Currently, the Shelly3EM emulator is available for
 ### For the Arduino IDE solution
 + Any ESP32 microcontroller (e.g. https://www.az-delivery.de/products/esp-32-dev-kit-c-v4 )
 + Arduino Ide software (https://www.arduino.cc/en/software )
+
+
+
+## How to…
+
+The installation guides for the different options can be found in the related Wiki articles.
+
+https://github.com/BetaTobi/Shelly3EM-Emulator-for-indielux-Stromwaechter/wiki
 
 
 
