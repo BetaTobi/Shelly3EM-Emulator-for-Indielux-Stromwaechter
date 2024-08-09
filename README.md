@@ -1,1 +1,1 @@
-# Shelly3EM-Emulator-for-Indielux-Stromwaechter
+# Shelly3EM-Emulator-for-indielux-Stromwaechter
