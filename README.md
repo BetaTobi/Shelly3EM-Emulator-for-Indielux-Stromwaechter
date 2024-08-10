@@ -37,5 +37,3 @@ The installation guides for the different options can be found in the related Wi
 
 https://github.com/BetaTobi/Shelly3EM-Emulator-for-indielux-Stromwaechter/wiki
 
-
-
