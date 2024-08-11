@@ -37,3 +37,6 @@ The installation guides for the different options can be found in the related Wi
 
 https://github.com/BetaTobi/Shelly3EM-Emulator-for-indielux-Stromwaechter/wiki
 
+The installation guide for the Stromwächter can be found here:
+
+https://www.indielux.com/support/anleitungen/indielux-ready2plugin-stromwaechter-anleitung/#stromwaechter-bedienung
