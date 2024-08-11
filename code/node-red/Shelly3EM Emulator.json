@@ -1,0 +1,1138 @@
+[
+    {
+        "id": "78e80f576c9b70c1",
+        "type": "tab",
+        "label": "Shelly3EM Emulator",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bca82789b4715407",
+        "type": "group",
+        "z": "78e80f576c9b70c1",
+        "name": "L1",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e696c8648b4b0745",
+            "4bc8e8d313653c0b",
+            "c060bc874288e4c6",
+            "620fbc3c43af5d62",
+            "0f2a1dd6cf326747"
+        ],
+        "x": 8,
+        "y": 13,
+        "w": 438,
+        "h": 314
+    },
+    {
+        "id": "1cdf3b29c3376d3a",
+        "type": "group",
+        "z": "78e80f576c9b70c1",
+        "name": "L2",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "56d75c0777acca8a",
+            "3fb7ac9dd1a252c9",
+            "75c66099b3e004fc",
+            "1d8c60e0d6bfdb38",
+            "334ca3640872632c"
+        ],
+        "x": 8,
+        "y": 333,
+        "w": 438,
+        "h": 314
+    },
+    {
+        "id": "c201348058156028",
+        "type": "group",
+        "z": "78e80f576c9b70c1",
+        "name": "L3",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7dbc136b015a33c7",
+            "82d53db1137ceb3b",
+            "402094f7ab1269b7",
+            "f92145ba9e6931d3",
+            "5a84a5fca3917df7"
+        ],
+        "x": 8,
+        "y": 653,
+        "w": 438,
+        "h": 314
+    },
+    {
+        "id": "ebf8022e05ee7f59",
+        "type": "group",
+        "z": "78e80f576c9b70c1",
+        "name": "Totals",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "231735812139aa7a"
+        ],
+        "x": 654,
+        "y": 459,
+        "w": 192,
+        "h": 82
+    },
+    {
+        "id": "84799d549b655494",
+        "type": "group",
+        "z": "78e80f576c9b70c1",
+        "name": "http",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "40f7cb94fc3a8e08",
+            "402472a12fc69409",
+            "15457f9a7732ed9a",
+            "bbdac49d39e536a5",
+            "ec2ab2b371c06e58",
+            "698777009168c349",
+            "2f7f834c4b084fd7",
+            "2e0a6881378b880e",
+            "67fc90f8b3727d12",
+            "1635ee8381547405"
+        ],
+        "x": 14,
+        "y": 979,
+        "w": 672,
+        "h": 302
+    },
+    {
+        "id": "0f2a1dd6cf326747",
+        "type": "group",
+        "z": "78e80f576c9b70c1",
+        "g": "bca82789b4715407",
+        "name": "Inputs for L1 to be defined",
+        "style": {
+            "stroke": "#92d04f",
+            "label": true,
+            "fill": "#bfdbef",
+            "color": "#000000"
+        },
+        "nodes": [
+            "5dd7180d8d45cd8b",
+            "151b7ffff8b1e549",
+            "42870ef96fb49363",
+            "f58837c156ffce21"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 172,
+        "h": 262
+    },
+    {
+        "id": "334ca3640872632c",
+        "type": "group",
+        "z": "78e80f576c9b70c1",
+        "g": "1cdf3b29c3376d3a",
+        "name": "Inputs for L2 to be defined",
+        "style": {
+            "stroke": "#92d04f",
+            "label": true,
+            "fill": "#bfdbef",
+            "color": "#000000"
+        },
+        "nodes": [
+            "d034f1c25835266c",
+            "4055a0a6e1fd134f",
+            "c54382f6bd9cefd2",
+            "05513d06ac5465d6"
+        ],
+        "x": 34,
+        "y": 359,
+        "w": 172,
+        "h": 262
+    },
+    {
+        "id": "5a84a5fca3917df7",
+        "type": "group",
+        "z": "78e80f576c9b70c1",
+        "g": "c201348058156028",
+        "name": "Inputs for L3 to be defined",
+        "style": {
+            "stroke": "#92d04f",
+            "label": true,
+            "fill": "#bfdbef",
+            "color": "#000000"
+        },
+        "nodes": [
+            "5e3f29d6306095af",
+            "1e021a2db0ceb703",
+            "37796c37858cd002",
+            "be1a67134680d5f5"
+        ],
+        "x": 34,
+        "y": 679,
+        "w": 172,
+        "h": 262
+    },
+    {
+        "id": "5dd7180d8d45cd8b",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "0f2a1dd6cf326747",
+        "name": "current_1",
+        "topic": "mqtt_topic/to/value_of/current_of/l1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "e696c8648b4b0745"
+            ]
+        ]
+    },
+    {
+        "id": "151b7ffff8b1e549",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "0f2a1dd6cf326747",
+        "name": "voltage_1",
+        "topic": "mqtt_topic/to/value_of/voltage_of/l1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "4bc8e8d313653c0b"
+            ]
+        ]
+    },
+    {
+        "id": "42870ef96fb49363",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "0f2a1dd6cf326747",
+        "name": "power_1",
+        "topic": "mqtt_topic/to/value_of/power_of/l1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "c060bc874288e4c6"
+            ]
+        ]
+    },
+    {
+        "id": "e696c8648b4b0745",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "bca82789b4715407",
+        "name": "current_1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "current_1",
+                "pt": "flow",
+                "to": "$abs(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4bc8e8d313653c0b",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "bca82789b4715407",
+        "name": "voltage_1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "voltage_1",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c060bc874288e4c6",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "bca82789b4715407",
+        "name": "power_1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "power_1",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "231735812139aa7a"
+            ]
+        ]
+    },
+    {
+        "id": "d034f1c25835266c",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "334ca3640872632c",
+        "name": "current_2",
+        "topic": "mqtt_topic/to/value_of/current_of/l2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "56d75c0777acca8a"
+            ]
+        ]
+    },
+    {
+        "id": "4055a0a6e1fd134f",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "334ca3640872632c",
+        "name": "voltage_2",
+        "topic": "mqtt_topic/to/value_of/voltage_of/l2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 460,
+        "wires": [
+            [
+                "3fb7ac9dd1a252c9"
+            ]
+        ]
+    },
+    {
+        "id": "c54382f6bd9cefd2",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "334ca3640872632c",
+        "name": "power_2",
+        "topic": "mqtt_topic/to/value_of/power_of/l2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "75c66099b3e004fc"
+            ]
+        ]
+    },
+    {
+        "id": "56d75c0777acca8a",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "1cdf3b29c3376d3a",
+        "name": "current_2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "current_2",
+                "pt": "flow",
+                "to": "$abs(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3fb7ac9dd1a252c9",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "1cdf3b29c3376d3a",
+        "name": "voltage_2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "voltage_2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75c66099b3e004fc",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "1cdf3b29c3376d3a",
+        "name": "power_2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "power_2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 520,
+        "wires": [
+            [
+                "231735812139aa7a"
+            ]
+        ]
+    },
+    {
+        "id": "5e3f29d6306095af",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "5a84a5fca3917df7",
+        "name": "current_3",
+        "topic": "mqtt_topic/to/value_of/current_of/l3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 720,
+        "wires": [
+            [
+                "7dbc136b015a33c7"
+            ]
+        ]
+    },
+    {
+        "id": "1e021a2db0ceb703",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "5a84a5fca3917df7",
+        "name": "voltage_3",
+        "topic": "mqtt_topic/to/value_of/voltage_of/l3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 780,
+        "wires": [
+            [
+                "82d53db1137ceb3b"
+            ]
+        ]
+    },
+    {
+        "id": "37796c37858cd002",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "5a84a5fca3917df7",
+        "name": "power_3",
+        "topic": "mqtt_topic/to/value_of/power_of/l3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 840,
+        "wires": [
+            [
+                "402094f7ab1269b7"
+            ]
+        ]
+    },
+    {
+        "id": "7dbc136b015a33c7",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "c201348058156028",
+        "name": "current_3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "current_3",
+                "pt": "flow",
+                "to": "$abs(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82d53db1137ceb3b",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "c201348058156028",
+        "name": "voltage_3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "voltage_3",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "402094f7ab1269b7",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "c201348058156028",
+        "name": "power_3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "power_3",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 840,
+        "wires": [
+            [
+                "231735812139aa7a"
+            ]
+        ]
+    },
+    {
+        "id": "231735812139aa7a",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "ebf8022e05ee7f59",
+        "name": "total_power",
+        "rules": [
+            {
+                "t": "set",
+                "p": "power_1",
+                "pt": "msg",
+                "to": "power_1",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "power_2",
+                "pt": "msg",
+                "to": "power_2",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "power_3",
+                "pt": "msg",
+                "to": "power_3",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "total_power",
+                "pt": "flow",
+                "to": "(msg.power_1 + msg.power_2 + msg.power_3)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40f7cb94fc3a8e08",
+        "type": "http in",
+        "z": "78e80f576c9b70c1",
+        "g": "84799d549b655494",
+        "name": "",
+        "url": "/status",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 1020,
+        "wires": [
+            [
+                "402472a12fc69409"
+            ]
+        ]
+    },
+    {
+        "id": "402472a12fc69409",
+        "type": "template",
+        "z": "78e80f576c9b70c1",
+        "g": "84799d549b655494",
+        "name": "Shelly 3EM: /status",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"relays\": [\n        {\n            \"ison\": false,\n            \"has_timer\": false,\n            \"timer_started\": 0,\n            \"timer_duration\": 0,\n            \"timer_remaining\": 0,\n            \"overpower\": false,\n            \"is_valid\": true,\n            \"source\": \"http\"\n        }\n    ],\n    \"emeters\": [\n        {\n            \"power\": 0,\n            \"pf\": 0,\n            \"current\": 0,\n            \"voltage\": 0,\n            \"is_valid\": true,\n            \"total\": 0,\n            \"total_returned\": 0\n        },\n        {\n            \"power\": 0,\n            \"pf\": 0,\n            \"current\": 0,\n            \"voltage\": 0,\n            \"is_valid\": true,\n            \"total\": 0,\n            \"total_returned\": 0\n        },\n        {\n            \"power\": 0,\n            \"pf\": 0,\n            \"current\": 0,\n            \"voltage\": 0,\n            \"is_valid\": true,\n            \"total\": 0,\n            \"total_returned\": 0\n        }\n    ],\n    \"total_power\": 67.50,\n    \"fs_mounted\": true\n}",
+        "output": "json",
+        "x": 150,
+        "y": 1080,
+        "wires": [
+            [
+                "ec2ab2b371c06e58",
+                "67fc90f8b3727d12"
+            ]
+        ]
+    },
+    {
+        "id": "15457f9a7732ed9a",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "84799d549b655494",
+        "name": "Set Headers",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "headers.content-type",
+                "pt": "msg",
+                "to": "application/json",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1240,
+        "wires": [
+            [
+                "bbdac49d39e536a5"
+            ]
+        ]
+    },
+    {
+        "id": "bbdac49d39e536a5",
+        "type": "http response",
+        "z": "78e80f576c9b70c1",
+        "g": "84799d549b655494",
+        "name": "http-out",
+        "statusCode": "",
+        "headers": {},
+        "x": 600,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "ec2ab2b371c06e58",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "84799d549b655494",
+        "name": "update L1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.emeters[0].current",
+                "pt": "msg",
+                "to": "current_1",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.emeters[0].voltage",
+                "pt": "msg",
+                "to": "voltage_1",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.emeters[0].power",
+                "pt": "msg",
+                "to": "power_1",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.emeters[0].pf",
+                "pt": "msg",
+                "to": "pf_1",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 160,
+        "y": 1120,
+        "wires": [
+            [
+                "698777009168c349"
+            ]
+        ]
+    },
+    {
+        "id": "698777009168c349",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "84799d549b655494",
+        "name": "update L2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.emeters[1].current",
+                "pt": "msg",
+                "to": "current_2",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.emeters[1].voltage",
+                "pt": "msg",
+                "to": "voltage_2",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.emeters[1].power",
+                "pt": "msg",
+                "to": "power_2",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.emeters[1].pf",
+                "pt": "msg",
+                "to": "pf_2",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 180,
+        "y": 1160,
+        "wires": [
+            [
+                "2f7f834c4b084fd7"
+            ]
+        ]
+    },
+    {
+        "id": "2f7f834c4b084fd7",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "84799d549b655494",
+        "name": "update L3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.emeters[2].current",
+                "pt": "msg",
+                "to": "current_3",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.emeters[2].voltage",
+                "pt": "msg",
+                "to": "voltage_3",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.emeters[2].power",
+                "pt": "msg",
+                "to": "power_3",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.emeters[2].pf",
+                "pt": "msg",
+                "to": "pf_3",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 1200,
+        "wires": [
+            [
+                "1635ee8381547405"
+            ]
+        ]
+    },
+    {
+        "id": "2e0a6881378b880e",
+        "type": "debug",
+        "z": "78e80f576c9b70c1",
+        "g": "84799d549b655494",
+        "name": "JSON out after update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "67fc90f8b3727d12",
+        "type": "debug",
+        "z": "78e80f576c9b70c1",
+        "g": "84799d549b655494",
+        "name": "JSON out before update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "1635ee8381547405",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "84799d549b655494",
+        "name": "update Totals",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.total_power",
+                "pt": "msg",
+                "to": "total_power",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 1240,
+        "wires": [
+            [
+                "15457f9a7732ed9a",
+                "2e0a6881378b880e"
+            ]
+        ]
+    },
+    {
+        "id": "620fbc3c43af5d62",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "bca82789b4715407",
+        "name": "pf_1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pf_1",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d8c60e0d6bfdb38",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "1cdf3b29c3376d3a",
+        "name": "pf_2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pf_2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f92145ba9e6931d3",
+        "type": "change",
+        "z": "78e80f576c9b70c1",
+        "g": "c201348058156028",
+        "name": "pf_3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pf_3",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f58837c156ffce21",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "0f2a1dd6cf326747",
+        "name": "pf_1",
+        "topic": "mqtt_topic/to/value_of/powerfactor_of/l1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "620fbc3c43af5d62"
+            ]
+        ]
+    },
+    {
+        "id": "05513d06ac5465d6",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "334ca3640872632c",
+        "name": "pf_2",
+        "topic": "mqtt_topic/to/value_of/powerfactor_of/l2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 580,
+        "wires": [
+            [
+                "1d8c60e0d6bfdb38"
+            ]
+        ]
+    },
+    {
+        "id": "be1a67134680d5f5",
+        "type": "mqtt in",
+        "z": "78e80f576c9b70c1",
+        "g": "5a84a5fca3917df7",
+        "name": "pf_3",
+        "topic": "mqtt_topic/to/value_of/powerfactor_of/l3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1aeec567de83d1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 900,
+        "wires": [
+            [
+                "f92145ba9e6931d3"
+            ]
+        ]
+    },
+    {
+        "id": "d1aeec567de83d1d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.178.70",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
