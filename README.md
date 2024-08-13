@@ -40,3 +40,10 @@ https://github.com/BetaTobi/Shelly3EM-Emulator-for-indielux-Stromwaechter/wiki
 The installation guide for the Stromwächter can be found here:
 
 https://www.indielux.com/support/anleitungen/indielux-ready2plugin-stromwaechter-anleitung/#stromwaechter-bedienung
+
+
+## Note:
+
+The Stromwächter uses the MQTT-values (or more correct, the values coming from the Shelly3EM) for health monitoring of the whole system and is able to cut-off the electrical system, if it detects an issue (e.g. no more updated values of power, current, voltage… available). 
+
+Do not manipulate the values in such a way, that they are not reflecting the current status of your “real” system. Otherwise, it might be possible, that the safety system of the Stromwächter can be undermined.
